@@ -39,17 +39,17 @@ avatar: "/img/avatar-icon.png"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
-  email: "youremail@domain.com"
+  name: atomsBlog
+  email: "sony183@bk.ru"
   facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
+  github: yourname    # https://github.com/atoms183
   twitter: yourname   # eg. daattali
   linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
   stackoverflow: yourlink  # eg. "3943160/daattali"
  
 # Select which links to show in the footer
 footer-links-active:
-  rss: false
+  rss: true
   facebook: true
   email: true
   twitter: true
@@ -59,7 +59,7 @@ footer-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "atoms183.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
