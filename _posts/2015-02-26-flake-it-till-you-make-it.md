@@ -2,7 +2,7 @@
 layout: post
 title: Типы данных в Sass
 subtitle: Excerpt from Soulshaping by Jeff Brown
-bigimg: /img/install-steps.gif
+bigimg: /img/path.jpg
 ---
 
 Null (нулевой)
