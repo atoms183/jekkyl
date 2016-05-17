@@ -289,7 +289,7 @@ footer .theme-by {
 
 .post-preview a {
   text-decoration: none;
-  color: #404040;
+  color: #FFF;
 }
 
 .post-preview a:focus,
@@ -326,7 +326,7 @@ footer .theme-by {
 
 @media only screen and (min-width: 768px) {
   .post-preview .post-title {
-    font-size: 36px;
+    font-size: 50px;
   }
 }
 
