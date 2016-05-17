@@ -25,10 +25,7 @@ h1,h2,h3,h4,h5,h6 {
 a {
   color: #008AFF;
 }
-a:hover,
-a:focus {
-  color: #0085a1;
-}
+
 blockquote {
   color: #808080;
   font-style: italic;
