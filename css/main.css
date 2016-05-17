@@ -3,11 +3,12 @@
 /* --- General --- */
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 18px;
-  color: #404040;
-  position: relative;
-  background: #DDEAB4;
+    font-family: 'Lora', 'Times New Roman', serif;
+    font-size: 18px;
+    color: #404040;
+    position: relative;
+    background-color: rgba(138, 249, 186, 0.41);
+    background-image: url("http://www.transparenttextures.com/patterns/brick-wall-dark.png");
 }
 p {
   line-height: 1.5;
@@ -310,13 +311,16 @@ footer .theme-by {
 }
 .post-preview .post-meta,
 .post-heading .post-meta {
-  color: #808080;
-  font-size: 18px;
+  color: #FFFFFF;
+  font-size: 20px;
   font-style: italic;
   margin: 0 0 10px;
 }
 .post-preview .post-entry {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #1B1A1A;
+    font-size: 20px;
+    font-weight: 600;
 }
 .post-preview .post-read-more {
   font-weight: 800;
@@ -377,6 +381,7 @@ footer .theme-by {
 .intro-header .page-heading .page-subheading,
 .intro-header .post-heading .post-subheading {
   font-size: 27px;
+  color: #fff;
   line-height: 1.1;
   display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
