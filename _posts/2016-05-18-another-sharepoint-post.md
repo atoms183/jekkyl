@@ -8,7 +8,7 @@ tags: article
 
 Если вы новичок в JavaScript, такие специфические выражения как «упаковка модулей», «Webpack и Browserify» и «AMD и CommonJS» могут вас напугать. Система модулей JavaScript может быть очень пугающей, но ее понимание имеет важное значение для веб-разработки. В этой статье я объясню значение этих слов с помощью простого русского языка (и нескольких примеров кода). Я надеюсь, что вы найдете это полезным!
 
-![_config.yml]({{ site.baseurl }}/img/b931f475b0984db391f1ae5cad45bced.png){:class="img-responsive image-center thumbnail " height="200px" width="400px"}
+![_config.yml]({{ site.baseurl }}/img/b931f475b0984db391f1ae5cad45bced.png){:class="img-responsive image-center thumbnail "}
 
 
 
