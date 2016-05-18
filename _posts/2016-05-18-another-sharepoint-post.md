@@ -12,8 +12,8 @@ tags: article
 
 Статья служит лишь памяткой или кратким справочником — для подробного ознакомления с методологиями настоятельно рекомендуется изучать оригинальную документацию.
 
-Итак, начнем.
-БЭМ
+Итак, начнем.<br>
+<h1>БЭМ</h1>
 ![_config.yml]({{ site.baseurl }}/img/b931f475b0984db391f1ae5cad45bced.png){:class="img-responsive image-center thumbnail "}<br>
 Автор: <a href="https://ru.bem.info/authors/">Яндекс</a><br>
 <a href="https://ru.bem.info/">Документация</a>
