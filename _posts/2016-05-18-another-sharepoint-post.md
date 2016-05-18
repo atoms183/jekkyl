@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  JavaScript модули руководство для начинающих
+title:  Способы организации CSS-кода
 date:  2016-05-18 15:30:00
-categories: lesson
-tags: JavaScript
+categories: Разработка
+tags: article
 ---
 
 Если вы новичок в JavaScript, такие специфические выражения как «упаковка модулей», «Webpack и Browserify» и «AMD и CommonJS» могут вас напугать. Система модулей JavaScript может быть очень пугающей, но ее понимание имеет важное значение для веб-разработки. В этой статье я объясню значение этих слов с помощью простого русского языка (и нескольких примеров кода). Я надеюсь, что вы найдете это полезным!
@@ -16,3 +16,4 @@ You can also post content to a blog by doing the following:
     Creating a post by using a blog creation and publishing tool that is compatible with a SharePoint blogs.
 
 By default, blogs are set up so that approval is required before posts are published. This can be helpful if numerous people are publishing content, or if a post could contain sensitive content. By default, people who have permission to manage lists can approve blog posts, but you can customize those settings.
+![_config.yml]({{ site.baseurl }}http://lorempixel.com/400/200/sports/1/)
