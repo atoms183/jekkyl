@@ -454,4 +454,5 @@ a.orange-link,
 a.orange-link:hover,
 a.orange-link:focus {
     color: #da532c;
+    font-size: 30px;
 }
