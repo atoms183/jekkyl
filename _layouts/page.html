@@ -1,18 +1,19 @@
 ---
-layout: base
+layout: master
 ---
-
-{% include header.html type="page" %}
-
-<div class="container" role="main">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      {{ content }}
-	    {% if page.comments %}
-        <div class="disqus-comments">
-	        {% include disqus.html %}
-        </div>
-	    {% endif %}
+    {% if page.theme And page.theme != "" And page.theme != nil %}
+    <div class="hidden-xs col-md-2 col-sm-3 {{page.theme}} sidebar">
+    {% else %}
+    <div class="hidden-xs col-md-2 col-sm-3 purple sidebar">
+    {% endif %}
+        {% include sidemenu.html %}
     </div>
-  </div>
-</div>
+    <div class="col-md-8 col-sm-7 col-md-offset-3 col-sm-offset-4">
+      <h1>{{page.title}}</h1>
+      {{content}}
+      {% include footer.html %}
+    </div>
+  </div> <!-- row -->
+</div> <!-- container -->
