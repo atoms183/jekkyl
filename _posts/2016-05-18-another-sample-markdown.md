@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Another sample markdown
-date:   2014-06-24 23:28:58
+date:   2016-05-18 23:28:58
 categories: design markdown
 tags: Design Markdown
 ---
