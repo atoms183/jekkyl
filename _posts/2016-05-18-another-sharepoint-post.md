@@ -54,7 +54,7 @@ tags: article
 <a href="https://ru.bem.info/forum/-147/">Здесь</a> можно почитать про историю создания БЭМ.
 
 <h2>OOCSS</h2>
-<img src="https://habrastorage.org/files/466/3e3/813/4663e38131c24db99aa009b4a55d3235.png" alt="image"/><br/>
+<img src="https://habrastorage.org/files/466/3e3/813/4663e38131c24db99aa009b4a55d3235.png" class="img-responsive image-center thumbnail" alt="image"/><br/>
 Автор: <a href="http://www.stubbornella.org/content/nicole-sullivan/">Николь Салливан (Nicole Sullivan)</a><br>
 <a href="http://www.slideshare.net/stubbornella/object-oriented-css">Презентация</a>
 OOCSS означает объектно-ориентированный CSS (Object-Oriented CSS). В этот подход заложены две основные идеи:<br/>
@@ -76,7 +76,7 @@ OOCSS означает объектно-ориентированный CSS (Obje
 Зато, как это иногда случается, некоторые идеи OOCSS вдохновили авторов на создание своих, более конкретных, способов структурирования кода — своеобразных форков OOCSS.<br/>
 <a name="smacss"></a><br/>
 <h2>SMACSS</h2><br/>
-<img src="https://habrastorage.org/files/4dc/24a/8dc/4dc24a8dc3fb4e758adf89af4f73f66c.png" alt="image"/><br/>
+<img src="https://habrastorage.org/files/4dc/24a/8dc/4dc24a8dc3fb4e758adf89af4f73f66c.png" class="img-responsive image-center thumbnail" alt="image"/><br/>
 <br/>
 Автор: <a href="https://smacss.com/book/about">Джонатан Снук (Jonathan Snook)</a><br/>
 <a href="https://smacss.com/">Документация</a><br/>
@@ -97,9 +97,9 @@ SMACSS расшифровывается как «масштабируемая и
 Также рекомендуется вводить неймспейсы для классов, принадлежащих к определенной группе, а также использовать отдельный неймспейс для классов, используемых в JavaScript.<br/>
 <br/>
 Этот подход действительно позволяет упростить написание и поддержку кода и в последнее время привлекает достаточно большое количество разработчиков.<br/>
-<a name="atomic"></a><br/>
+
 <h2>Atomic CSS</h2><br/>
-<img src="https://habrastorage.org/files/b93/1f4/75b/b931f475b0984db391f1ae5cad45bced.png" alt="image"/><br/>
+<img src="https://habrastorage.org/files/b93/1f4/75b/b931f475b0984db391f1ae5cad45bced.png" class="img-responsive image-center thumbnail" alt="image"/><br/>
 <br/>
 Автор: <a href="https://twitter.com/thierrykoblentz">Тьерри Коблентц (Thierry Koblentz) — Yahoo</a><br/>
 <a href="http://www.smashingmagazine.com/2013/10/21/challenging-css-best-practices-atomic-approach/">Оригинальная статья</a><br/>
@@ -121,7 +121,7 @@ Atomic CSS, редко также ACSS — атомарный CSS. В некот
 <br/>
 
 <h2>MCSS</h2><br/>
-<img src="https://habrastorage.org/files/041/ae2/293/041ae229321745fe88c7205e514e5b90.png"/><br/>
+<img src="https://habrastorage.org/files/041/ae2/293/041ae229321745fe88c7205e514e5b90.png" class="img-responsive image-center thumbnail"/><br/>
 <br/>
 Автор: <a href="http://rhr.me/">Роберт Харитонов — Одноклассники</a><br/>
 <a href="http://operatino.github.io/MCSS/">Документация</a><br/>
@@ -148,7 +148,7 @@ MCSS — многослойный CSS (Multilayer CSS). Этот стиль на
 <br/>
 
 <h2>AMCSS</h2><br/>
-<img src="https://habrastorage.org/files/9ee/1d0/988/9ee1d098849a4b04ad300e32a6d17099.png"/><br/>
+<img src="https://habrastorage.org/files/9ee/1d0/988/9ee1d098849a4b04ad300e32a6d17099.png" class="img-responsive image-center thumbnail"/><br/>
 <br/>
 Автор: <a href="https://twitter.com/glenmaddern">Глен Маддерн (Glen Maddern)</a><br/>
 <a href="https://amcss.github.io/">Документация</a><br/>
@@ -191,7 +191,7 @@ MCSS — многослойный CSS (Multilayer CSS). Этот стиль на
 </code></pre><br/>
 <a name="fun"></a><br/>
 <h2>FUN</h2><br/>
-<img src="https://habrastorage.org/files/2b3/462/864/2b34628642c34a839b89a438495f74d0.png"/><br/>
+<img src="https://habrastorage.org/files/2b3/462/864/2b34628642c34a839b89a438495f74d0.png" class="img-responsive image-center thumbnail"/><br/>
 <br/>
 Автор: <a href="https://plus.google.com/107588612045728705538/posts">Бен Фрейн (Ben Frain)</a><br/>
 <a href="http://benfrain.com/enduring-css-writing-style-sheets-rapidly-changing-long-lived-projects/">Оригинальная статья</a><br/>
