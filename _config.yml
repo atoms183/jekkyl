@@ -12,17 +12,17 @@ permalink:        /blog/:year/:month/:day/:title
 # Setup
 title:            'atomsBlog'
 tagline:          'atoms183-Blog'
-description:      'A Sample blog using Jekyll Metro'
+description:      'A Sample blog on atoms183'
 url:              'http://atoms183.github.io/'
 baseurl:          ''
 
 # Navigation
 navigation:
-- text: About
+- text: Обо мне
   url: /about/
-- text: Resume
+- text: Резюме
   url: /resume/
-- text: Blog
+- text: Блог
   url: /blog/
 - text: Tags
   url: /tags/
@@ -33,21 +33,21 @@ navigation:
 
 
 # Author Details
-author:         'Abdel Raoof Olakara'
+author:         'atoms183'
 
 #Social Media links (Use complete URL except for email)
 dribbble:
 email:
-facebook:       'https://www.facebook.com/olakara'
+facebook:       'https://www.facebook.com/profile.php?id=100004512194792'
 flickr:
-github:         'https://github.com/olakara'
-gplus:          'https://plus.google.com/100425464897246255887/'
+github:         'https://github.com/atoms183'
+gplus:          '#'
 instagram:
 pinterest:
-linkedin:       'https://ae.linkedin.com/in/olakara/'
+linkedin:       '#'
 rss:
-stackoverflow:  'http://stackoverflow.com/users/185655/abdel-raoof'
-twitter:        'https://twitter.com/olakara'
+stackoverflow:  '#'
+twitter:        '#'
 
 # Google Analytics
 gahandler: 'UA-52149651-1'
