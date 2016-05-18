@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  JavaScript модули: руководство для начинающих
-date:   2014-07-07 22:06:00
+title:  JavaScript модули руководство для начинающих
+date:   2014-07-07 15:30:00
 categories: lesson
 tags: JavaScript
 ---
