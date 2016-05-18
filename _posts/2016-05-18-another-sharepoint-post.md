@@ -14,7 +14,7 @@ tags: article
 
 Итак, начнем.<br>
 <h2>БЭМ</h2>
-<img src="https://habrastorage.org/files/dc4/809/03a/dc480903af774eab9370c85e50c8ac72.png" alt="image"/><br/>
+<img src="https://habrastorage.org/files/dc4/809/03a/dc480903af774eab9370c85e50c8ac72.png" class="img-responsive image-center thumbnail " alt="image"/><br/>
 Автор: <a href="https://ru.bem.info/authors/">Яндекс</a><br>
 <a href="https://ru.bem.info/">Документация</a>
 
