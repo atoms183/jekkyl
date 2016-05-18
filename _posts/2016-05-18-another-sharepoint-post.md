@@ -54,7 +54,7 @@ tags: article
 <a href="https://ru.bem.info/forum/-147/">Здесь</a> можно почитать про историю создания БЭМ.
 
 <h2>OOCSS</h2>
-![_config.yml]({{ site.baseurl }}/img/4663e38131c24db99aa009b4a55d3235.png){:class="img-responsive image-center thumbnail "}<br>
+<img src="https://habrastorage.org/files/466/3e3/813/4663e38131c24db99aa009b4a55d3235.png" alt="image"/><br/>
 Автор: <a href="http://www.stubbornella.org/content/nicole-sullivan/">Николь Салливан (Nicole Sullivan)</a><br>
 <a href="http://www.slideshare.net/stubbornella/object-oriented-css">Презентация</a>
 OOCSS означает объектно-ориентированный CSS (Object-Oriented CSS). В этот подход заложены две основные идеи:<br/>
