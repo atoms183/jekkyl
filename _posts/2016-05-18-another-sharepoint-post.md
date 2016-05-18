@@ -10,6 +10,8 @@ tags: article
 
 [![This is a test]({{ site.baseurl }}/img/dc480903af774eab9370c85e50c8ac72.png "A title!"){:class="img-responsive image-center thumbnail " height="200px" width="400px"}]{:class="ltbox"}
 
+[![This is a test](http://lorempixel.com/400/200/sports/1/ "A title!"){:class="img-responsive image-center thumbnail " height="200px" width="400px"}](http://lorempixel.com/400/200/sports/1/){:class="ltbox"}
+
 You can also post content to a blog by doing the following:
 
     Creating and submitting a post in an e-mail message. In order to submit a post in an e-mail message, your blog must be enabled to receive content in e-mail messages.
