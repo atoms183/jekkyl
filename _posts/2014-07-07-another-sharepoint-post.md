@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  Another Sharepoint post
-date:   2014-07-07 15:30:00
-categories: SharePoint
-tags: SharePoint Designer
+title:  JavaScript модули: руководство для начинающих
+date:   2016-18-05 22:06:00
+categories: lesson
+tags: JavaScript
 ---
 
 A blog is a Web site that enables you or your organization to quickly share ideas and information. Blogs contain posts that are dated and listed in reverse chronological order. People can comment on your posts, as well as provide links to interesting sites, photos, and related blogs.
