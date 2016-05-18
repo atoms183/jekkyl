@@ -16,4 +16,4 @@ You can also post content to a blog by doing the following:
     Creating a post by using a blog creation and publishing tool that is compatible with a SharePoint blogs.
 
 By default, blogs are set up so that approval is required before posts are published. This can be helpful if numerous people are publishing content, or if a post could contain sensitive content. By default, people who have permission to manage lists can approve blog posts, but you can customize those settings.<br>
-[![preview](http://lorempixel.com/400/200/sports/2/ "A title!"){:class="img-responsive image-center thumbnail " height="200px" width="400px"}](http://lorempixel.com/400/200/sports/1/){:class="ltbox"}
+[![preview](/img/b931f475b0984db391f1ae5cad45bced.png/ "A title!"){:class="img-responsive image-center thumbnail " height="200px" width="400px"}](http://lorempixel.com/400/200/sports/1/){:class="ltbox"}
