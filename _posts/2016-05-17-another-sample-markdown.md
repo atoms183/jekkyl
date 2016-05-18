@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  Another sample markdown
+title:  ReactJS 15.0.2 Tutorial
 date:   2016-05-17 23:28:58
-categories: design markdown
-tags: Design Markdown
+categories: article
+tags: Tutorial
 ---
 
 Мы создадим простой, но реалистичный модуль комментариев для блога, упрощенный аналог модуля комментариев реального времени, предлагаемый такими ресурсами как Disqus, LiveFyre и Facebook.<br/>
