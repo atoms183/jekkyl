@@ -6,17 +6,34 @@ categories: Разработка
 tags: article
 ---
 
-Если вы новичок в JavaScript, такие специфические выражения как «упаковка модулей», «Webpack и Browserify» и «AMD и CommonJS» могут вас напугать. Система модулей JavaScript может быть очень пугающей, но ее понимание имеет важное значение для веб-разработки. В этой статье я объясню значение этих слов с помощью простого русского языка (и нескольких примеров кода). Я надеюсь, что вы найдете это полезным!
+Разработчик Бен Фрейн (Ben Frain) однажды заметил: «Писать CSS-код легко. Масшабировать и поддерживать его — нет».
 
-![_config.yml]({{ site.baseurl }}/img/b931f475b0984db391f1ae5cad45bced.png){:class="img-responsive image-center thumbnail "}
+К счастью, на просторах интернета можно найти множество решений этой проблемы. В данной статье рассмотрены основные киты структуры CSS-кода, а также интересные рыбы/млекопитающие поменьше.
+
+Статья служит лишь памяткой или кратким справочником — для подробного ознакомления с методологиями настоятельно рекомендуется изучать оригинальную документацию.
+
+Итак, начнем.
+БЭМ
+![_config.yml]({{ site.baseurl }}/img/b931f475b0984db391f1ae5cad45bced.png){:class="img-responsive image-center thumbnail "}<br>
+Автор: <a href="https://ru.bem.info/authors/">Яндекс</a><br>
+<a href="https://ru.bem.info/">Документация</a>
+
+Пожалуй, самая популярная сейчас методология в мире. Название означает «Блок, элемент, модификатор». 
+
+Эти категории играют следующие роли в коде:
+
+> блоки могут использоваться в нескольких местах сайта;
+> элементы являются частью блока и не имеют функционального смысла вне блока;
+> модификаторы представляют собой свойства блока или элемента, которые меняют его внешний вид или поведение.
+
+Из этих категорий строятся классы для непосредственного использования в CSS. При этом не следует использовать селекторы тэгов (это потенциально может помешать использовать блок/элемент в каком-то нестандартном месте на сайте, т.е. привязывает сущность к контексту); рекомендуется также избегать каскадных селекторов, т.к. получившийся класс сам по себе достаточно точно (специфично) выбирает соответствующий элемент.
+
+Такой подход позволяет избавиться от непредсказуемых последствий каскада и изолирует отдельные модули друг от друга.
+
+Пример кода в стиле БЭМ:
+
+    # .block_element {...}
+      .block_element-modifier {...}
 
 
 
-
-You can also post content to a blog by doing the following:
-
-    Creating and submitting a post in an e-mail message. In order to submit a post in an e-mail message, your blog must be enabled to receive content in e-mail messages.
-    Creating a post by using a blog creation and publishing tool that is compatible with a SharePoint blogs.
-
-By default, blogs are set up so that approval is required before posts are published. This can be helpful if numerous people are publishing content, or if a post could contain sensitive content. By default, people who have permission to manage lists can approve blog posts, but you can customize those settings.<br>
-[![preview](http://atoms183.github.io/img/b931f475b0984db391f1ae5cad45bced.png/ "A title!")
