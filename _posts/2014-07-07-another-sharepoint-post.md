@@ -6,13 +6,7 @@ categories: lesson
 tags: JavaScript
 ---
 
-A blog is a Web site that enables you or your organization to quickly share ideas and information. Blogs contain posts that are dated and listed in reverse chronological order. People can comment on your posts, as well as provide links to interesting sites, photos, and related blogs.
-
-Posts are an essential part of a blog. They are typically journal-like entries that contain information, ideas, and opinions. They are displayed in chronological order, starting with the most recent posts.
-
-You can create a post on a SharePoint blog by using a Web browser, if you have permission to contribute to the Posts list. You don't need additional tools or programs to create content, add pictures, apply formatting, and insert hyperlinks. To post comments to a blog, you must have permission to contribute to the Comments list. In some cases, comments must be approved before they will appear on the site.
-
- Note   If your Web browser doesn't support ActiveX controls, then the formatting toolbar may not be available. However, you can use basic HTML tags to format the text in your blog posts.
+Если вы новичок в JavaScript, такие специфические выражения как «упаковка модулей», «Webpack и Browserify» и «AMD и CommonJS» могут вас напугать. Система модулей JavaScript может быть очень пугающей, но ее понимание имеет важное значение для веб-разработки. В этой статье я объясню значение этих слов с помощью простого русского языка (и нескольких примеров кода). Я надеюсь, что вы найдете это полезным!
 
 [![This is a test](http://lorempixel.com/400/200/sports/1/ "A title!"){:class="img-responsive image-center thumbnail " height="200px" width="400px"}](http://lorempixel.com/400/200/sports/1/){:class="ltbox"}
 
