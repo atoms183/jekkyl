@@ -1,125 +1,58 @@
 ---
-layout: master
-title: Home
-description: Home Page for Jekyll Metro Theme
+layout: index-full
+description: the good site of life
 ---
+{% for post in paginator.posts %}
+    {% include article_index.html %}
+{% endfor %}
 
-<div class="container">
+{% if paginator.total_pages > 1 %}
+    <div class="pagination">
+        <!-- link to first page -->
+        {% if paginator.total_pages > 3 %}
+            {% if paginator.page == 1 %}
+                <span class="btn disabled"><i class="fa fa-angle-double-left"></i></span>
+            {% else %}
+                <a class="btn" href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-double-left"></i></a>
+            {% endif %}
+        {% endif %}
 
-	<header class="row">
-	  <div class="col-sm-6 col-md-12" style="margin-top:25px;margin-bottom:25px">
-	    <h1 id="pin">{{site.title}}</h1>
-	  </div>
-	</header>
-	<nav>
-		<div class="row">
- 			<div class="col-md-4 col-sm-6 col-xs-12">
-				<a href="about/" title="About Me">
-					<div class="tile purple profile">
-						<h2 class="title">About Me</h2>
-						<p>Hello World, I am {{site.author}}.</p>
-					</div>
-				</a>
-		    </div>
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="resume/" title="Resume" class="tile red">
-					<i class="icon-rems" style="font-size:8em"></i>
-				</a>
-			</div>
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="blog/" title="Blog"  class="tile orange">
-					<i class="icon-blog" style="font-size:8em"></i>
-				</a>
-			</div>
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="feed.xml" title="RSS Feed" class="tile orange">
-					<i class="icon-rss" style="font-size:8em"></i>
-				</a>
-			</div>
-		</div>
+        <!-- previous link -->
+        {% if paginator.previous_page %}
+            <a class="btn prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-left"></i></a>
+        {% else %}
+            <span class="btn disabled"><i class="fa fa-angle-left"></i></span>
+        {% endif %}
 
-		<div class="row">
+        <!-- number links -->
+        {% capture start %}
+            {{ paginator.page | minus: 3 }}
+        {% endcapture %}
 
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				{% for post in site.posts offset:1 limit:1 %}
-				<a href="{{post.url}}" title="Recent Article">
-					<div class="tile green">
-						<h3 class="title">Recent Article</h3>
-						<h4 class="title">{{ post.title }}</h4>
-						<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
-					</div>
-				</a>
-				{% endfor %}
-			</div>
+        {% for i in (1..paginator.total_pages) limit: 5 offset: start %}
+            {% if i == paginator.page %}
+                <span class="btn disabled">{{ i }}</span>
+            {% elsif i == 1 %}
+                <a class="btn" href="{{ site.baseurl }}/">{{ i }}</a>
+            {% else %}
+                <a class="btn" href="/page/{{ i }}">{{ i }}</a>
+            {% endif %}
+        {% endfor %}
 
+        <!-- next link -->
+        {% if paginator.next_page %}
+            <a class="btn next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-right"></i></a>
+        {% else %}
+            <span class="btn disabled"><i class="fa fa-angle-right"></i></span>
+        {% endif %}
 
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				{% for post in site.posts limit:1 %}
-				<a href="{{post.url}}" title="Latest Article">
-					<div class="tile red">
-						<h3 class="title">Latest Article</h3>
-						<h4 class="title">{{ post.title }}</h4>
-						<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
-					</div>
-				</a>
-				{% endfor %}
-			</div>
-
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.stackoverflow}}" title="StackOverflow" class="tile darken" >
-					<i class="icon-skow" style="font-size:8em;color:white"></i>
-				</a>
-			</div>
-
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				{% for post in site.posts %}
-					{% if post.featured == true %}
-					<a href="{{post.url}}" title="Featured Article">
-						<div class="tile orange">
-							<h3 class="title">Featured Article</h3>
-							<h4 class="title">{{ post.title }}</h4>
-							<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
-						</div>
-					</a>
-					{% break %}
-					{% endif %}
-				{% endfor %}
-			</div>
-		</div>
-
-		<div class="row" style="margin-bottom:25px">
-
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.twitter}}" title="Twitter" class="tile blue">
-					<i class="icon-twtr" style="font-size:8em"></i>
-				</a>
-			</div>
-
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.gplus}}" title="Google Plus"  class="tile orange">
-					<i class="icon-gpls" style="font-size:8em"></i>
-				</a>
-			</div>
-
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.facebook}}" class="tile blue">
-					<i class="icon-fcbk" style="font-size:8em"></i>
-				</a>
-			</div>
-
-			<div class="col-md-2 col-sm-3 col-xs-6">
-
-				<a href="{{site.github}}" title="Github" class="tile purple">
-					<i class="icon-gthb" style="font-size:8em"></i>
-				</a>
-
-			</div>
-
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.linkedin}}" title="LinkedIn" class="tile blue">
-					<i class="icon-lkin" style="font-size:8em"></i>
-				</a>
-			</div>
-		</div>
-	</nav>
-</div>
+        <!-- last page link -->
+        {% if paginator.total_pages > 3 %}
+            {% if paginator.page == paginator.total_pages %}
+                <span class="btn disabled"><i class="fa fa-angle-double-right"></i></span>
+            {% else %}
+                <a class="btn" href="{{ site.baseurl | replace: '//', '/' }}/page/{{paginator.total_pages}}"><i class="fa fa-angle-double-right"></i></a>
+            {% endif %}
+        {% endif %}
+    </div>
+{% endif %}
