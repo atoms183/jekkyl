@@ -1,19 +1,36 @@
----
-layout: master
----
-<div class="container-fluid">
-  <div class="row">
-    {% if page.theme And page.theme != "" And page.theme != nil %}
-    <div class="hidden-xs col-md-2 col-sm-3 {{page.theme}} sidebar">
-    {% else %}
-    <div class="hidden-xs col-md-2 col-sm-3 purple sidebar">
-    {% endif %}
-        {% include sidemenu.html %}
-    </div>
-    <div class="col-md-8 col-sm-7 col-md-offset-3 col-sm-offset-4">
-      <h1>{{page.title}}</h1>
-      {{content}}
-      {% include footer.html %}
-    </div>
-  </div> <!-- row -->
-</div> <!-- container -->
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include head.html %}
+    </head>
+
+    <body>
+        {% include svg.html %}
+        <header class="head">
+            {% include header.html %}
+            {% include nav.html %}
+        </header>
+        {% include search.html %}
+        <section class="margin">
+            <div class="content">
+                <div class="content_container">
+                    <article>
+                        {% if page.featimg %}
+                            <img class="featimg" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ page.featimg }}" alt="{{ page.featimg }}">
+                        {% endif %}
+
+                        <h1 class="page_title">
+                            {{ page.title }}
+                        </h1>
+                        <div class="post_content">
+                            {{ content }}
+                        </div>
+                    </article>
+                </div>
+                {% include sidebar.html %}
+            </div>
+        </section>
+        {% include footer.html %}
+        <script src="{{ site.baseurl | replace: '//', '/' }}/js/build/global.min.js"></script>
+    </body>
+</html>

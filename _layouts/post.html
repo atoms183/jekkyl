@@ -1,64 +1,91 @@
----
-layout: master
----
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include head.html %}
+    </head>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="hidden-xs col-md-2 col-sm-3 li8-green sidebar">
-      {% include sidemenu.html %}
-    </div> <!-- Side column -->
-    <div class="col-md-8 col-sm-7 col-md-offset-3 col-sm-offset-4">
-      <article class="col-md-12 col-xs-12 justified">
-        <h1 class="post-title">{{ page.title }}</h1>
-        <div class="publish-tag">
-          <span class="fa fa-calendar"></span>&nbsp;Опубликована {{ page.date | date: "%B %d, %Y" }}
-        </div>
-        {{ content }}
-        <br/>
-        <span class="fa fa-tag"></span>Tags:
-        {% if page.tags %}
-          {% for tag in page.tags %}
-            <a href="/tags/{{tag}}"><span class="label label-primary">{{tag}}</span></a>
-          {% endfor %}
-        {% else %}
-          None
-        {% endif %}
-        <br/><br/>
-        <h4>Comments:</h4>
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-          var disqus_shortname = '{{site.disqushandler}}';
+    <body>
+        {% include svg.html %}
+        <header class="head">
+            {% include header.html %}
+            {% include nav.html %}
+        </header>
+        {% include search.html %}
+        <section class="margin">
+            <div class="content">
+                <div class="content_container">
+                    <article>
+                        {% if page.type == "vimeo" %}
+                            {% if page.vimeo-embed %}
+                                <div class="video_container">
+                                    {{ page.vimeo-embed }}
+                                </div>
+                            {% endif %}
+                        {% elsif page.type == "youtube" %}
+                            {% if page.yt-video-id %}
+                                <div class="video_container">
+                                    <iframe src="https://www.youtube.com/embed/{{page.yt-video-id}}?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            {% endif %}
+                        {% elsif page.type == "image" or page.type == "gallery" %}
+                            {% if page.featimg %}
+                                <img class="featimg" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ page.featimg }}" alt="{{ page.featimg }}">
+                            {% endif %}
+                        {% elsif page.type == "audio" %}
+                            {% if page.audio-embed %}
+                                {{ page.audio-embed }}
+                            {% endif %}
+                        {% endif %}
 
-          /* * * DON'T EDIT BELOW THIS LINE * * */
-          (function() {
-              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-      </article>
-
-      <div class="row">
-        <div class="col-sm-6 col-xs-6 text-left">
-       	{% if page.previous.url %}
-        	<a class="btn btn-blue" href="{{page.previous.url}}">← Previous</a>
-        {% else %}
-        	<span class="btn btn-blue disabled">← Previous</span>
-        {% endif %}
-        </div>
-        <div class="col-sm-6 col-xs-6 text-right">
-        {% if page.next.url %}
-        	<a class="btn btn-blue" href="{{page.next.url}}">Next →</a>
-        {% else %}
-        	<span class="btn btn-blue disabled">Next →</span>
-        {% endif %}
-        </div>
-      </div>
-
-      {% include footer.html %}
-    </div> <!-- content area column -->
-  </div> <!-- row  -->
-</div> <!-- container -->
+                        <h1 class="post_title">
+                            {{ page.title }}
+                        </h1>
+                        <div class="meta">
+                            {% include author.html%} &bull;
+                            <span class="date">
+                                Published on {{ page.date | date: '%B %d, %Y' }}
+                            </span>
+                        </div>
+                        {% if page.type == "standard" %}
+                            {% if page.featimg %}
+                                <img class="featimg" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ page.featimg }}" alt="{{ page.featimg }}">
+                            {% endif %}
+                        {% endif %}
+                        <div class="post_content">
+                            {{ content }}
+                        </div>
+                        {% if page.category || page.tags %}
+                        <div class="catsandtags">
+                            {% if page.category %}
+                            <p class="category">
+                                <span class="name">Categories:</span>
+                                {{ page.categories | category_links }}
+                            </p>
+                            {% endif %}
+                            {% if page.tags %}
+                            <p class="tags">
+                                <span class="name">Tags:</span>
+                                {% for tag in page.tags %}
+                                    <a href="{{ site.tag_dir | prepend: site.baseurl | replace: '//', '/' }}/{{ tag }}">{{ tag }}</a>
+                                {% endfor %}
+                            </p>
+                            {% endif %}
+                        </div>
+                        {% endif %}
+                    </article>
+                    <div class="post_nav">
+                        {% if page.previous.url %}
+                        <a class="prev" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-left"></i><span class="short"> prev</span><span class="long">ious post</span></a>
+                        {% endif %}
+                        {% if page.next.url %}
+                        <a class="next" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}"><span class="short">next </span><span class="long">post </span><i class="fa fa-angle-right"></i></a>
+                        {% endif %}
+                    </div>
+                </div>
+                {% include sidebar.html %}
+            </div>
+        </section>
+        {% include footer.html %}
+        <script src="{{ site.baseurl | replace: '//', '/' }}/js/build/global.min.js"></script>
+    </body>
+</html>
