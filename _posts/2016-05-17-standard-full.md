@@ -4,6 +4,7 @@ title: 45 ресурсов дизайнерам в помощь
 featimg: 6.jpg
 tags: [Статья]
 category: [Дизайн]
+layout: post-classic-sidebar-left
 ---
 Dripicons V2<br/>
 <br/>
