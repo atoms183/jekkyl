@@ -1,6 +1,7 @@
 ---
 author: atoms
 title: 45 ресурсов дизайнерам в помощь
+featimg: 6.jpg
 tags: [Статья]
 category: [Дизайн]
 ---
