@@ -1,11 +1,10 @@
 ---
 author: person
-title: Full Width Post
-featimg: 2.jpg
-tags: [text]
-category: [standard]
+title: 45 ресурсов дизайнерам в помощь
+tags: [Статья]
+category: [Дизайн]
 ---
->Dripicons V2</a><br/>
+Dripicons V2<br/>
 <br/>
 <img src="https://habrastorage.org/files/612/26d/e8b/61226de8b3e44bbdbb6ad5d11b24450e.jpg"/><br/>
 <br/>
