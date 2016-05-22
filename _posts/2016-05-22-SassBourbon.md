@@ -62,7 +62,7 @@ category: [Статья]
     p {
         color: #ffffff;
     }
-}/code></pre><br/>
+}</code></pre><br/>
 
 Сохранив этот фрагмент как test.scss и обработав компилятором, вы получите CSS, идентичный предыдущему.
 
@@ -135,22 +135,3 @@ Ruby 1.9.3 нашей системе уже есть, Sass работает, а,
   background-image: linear-gradient(#990000, black); }
   body p {
     color: #ccccff; }</code></pre><br/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
