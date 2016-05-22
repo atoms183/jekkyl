@@ -1,7 +1,6 @@
 ---
 author: atoms
 title: Начинаем работу с Sass и Bourbon
-featimg: 2.jpg
 tags: [Статья]
 category: [Статья]
 ---
