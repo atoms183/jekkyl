@@ -2,10 +2,10 @@
 layout: page-material-sidebar-right
 title: Archive
 ---
-#### by Month
+#### За определенный месяц
 {% include monthly_archive.html %}
 
 <br/>
 
-#### by Year
+#### За год
 {% include yearly_archive.html %}
