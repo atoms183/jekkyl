@@ -1,6 +1,6 @@
 ---
 layout: page-material-sidebar-right
-title: Archive
+title: История публикаций
 ---
 #### За определенный месяц
 {% include monthly_archive.html %}
