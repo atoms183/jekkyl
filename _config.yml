@@ -25,7 +25,7 @@ url: "http://justgoodthemes.com"
 
 # Site navigation - each item must have a title and a url.
 navigation:
-- text: Home
+- text: Главная
   url: /
 - text: About
   url: /about/
