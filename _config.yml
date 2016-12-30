@@ -38,14 +38,14 @@ navigation:
 disqus:
 
 # Author information - author info at the bottom of the post
-author_name: "John Doe"
+author_name: "Дмитрий Глазвин"
 author_bio: "John is a designer, photographer, speaker, author of a couple of books about typography and the founder of photo magazine Curious."
-author_url:  "http://justgoodthemes.com"
+author_url:  "#"
 author_location: "Vilnius, Lithuania"
 author_image: /images/authorimage.png
 
 # Sidebar Add banner
-banner_url: "http://justgoodthemes.com"
+banner_url: "#"
 banner_image: images/banner.jpg
 
 # Sidebar newsletter widget - add your form action url for MailChimp signup form here
