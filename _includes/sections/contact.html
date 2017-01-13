@@ -31,16 +31,16 @@
       <div class="col-md-8 col-md-push-2">
         <form id="sera-contact-form" action="https://formspree.io/{{ site.email }}" method="POST" class="contact-form container-fluid">
           <div class="col-md-6">
-            <input type="text" name="firstname" placeholder="First Name" />
+            <input type="text" name="name" placeholder="Name" />
           </div>
           <div class="col-md-6">
-            <input type="text" name="lastname" placeholder="Last Name" />
+            <input type="text" name="website" placeholder="Website" />
           </div>
           <div class="col-md-6">
-            <input type="text" name="Phone" placeholder="Phone" />
+            <input type="text" name="email" placeholder="Email" />
           </div>
           <div class="col-md-6">
-            <input type="text" name="Email" placeholder="Email" />
+            <input type="text" name="subject" placeholder="Subject" />
           </div>
           <div class="col-md-12">
             <textarea name="message" rows="8" cols="40" placeholder="Message"></textarea>
@@ -59,7 +59,7 @@
 <!-- Google Map Embed -->
 <div class="google-map">
 
-  <script src="//maps.googleapis.com/maps/api/js?key={{ site.key-api }}"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?key={{ site.key-api }}"></script>
   <div style='overflow:hidden;height:490px;width:100%;'>
       <div id='gmap_canvas' style='height:490px;width:100%;'></div>
   </div>

@@ -1,287 +1,42 @@
-#
-# Sera - OnePage Jekyll Template
-# Configuration File
-#
-
 # Information for compile
 exclude: ["node_modules", "gulpfile.js", "package.json", "README.md"]
-
-#######################################################
-#######################################################
-###############   HEADER INFORMATION    ###############
-#######################################################
-#######################################################
-
-# This is your site title
-title: Customer Experience Management Software | CX Feedback Devices | visitorM
-# Website language
-lang: en-US
-# Header Title
-header-title: Operationalize <strong>Emotion</strong>
-# Header Tagline
-headter-tagline: Automate Customer Feedback & Employee Processes
-
-####################################
-######   CTA Header Buttons   ######
-####################################
-
-# Focus Buttons
-header-focus-button:
-  title: Features
-  url: '#features'
-
-# Secondary Buttons
-header-secondary-button:
-  title: Contact us
-  url: '#contact'
-
-#
-# If your website is placed in a separate folder on your server please modify
-# this with your folder name, by default is empty.
-# Example: Sera Demo is hosted on projects.gleesik.ro/sera-onepage
-# If I compile Sera Template and I put in /sera-onepage without modifing baseurl
-# than scripts can't be loaded corectly.
-# For this example my site url is: projects.gleesik.ro (This can be just www.example.com)
-# My folder for Demo Website is: /sera-onepage so baseurl: /sera-onepage
-#
-baseurl: 
-
-#
-# This is your email adress, contact from send here all emails from contact section
-# IMPORTANT: you can modify contact form from this static template, but now works contact form works with a free external server
-# To configure this contact form, first please send a fictive email afeter you enter below your email and verify that :)
-#
-email: hello@visitorM.com
-
-# Offer Banner Link
-# Default link is a link to all Sera OnePage products
-banner-link: https://themeforest.net/collections/6069390-sera
 
 ####################################
 ######  Global Social Links   ######
 ####################################
-youtube: '#'
-pinterest: '#'
-facebook: '#'
-twitter: '#'
-google-plus: '#'
-vimeo: '#'
+youtube: 
+twitter: 
 
-#########################
-######   Widgets   ######
-#########################
+skills:
+- title: Ruby Developer
+  description: 
+  icon: pe-7s-vector
 
-#
-# About Blog Author Widget
-#
-about-widget:
-  author-avatar: avatar-02.jpg
-  author-name: John Doe
-  author-tagline: Blog Author
-  author-info: Cum sociis que penatibus et magnis dis parturient montes lorem, nascetur ridiculus mus. Donec quam felis, ultricies nec.
-  author-social-links:
-    youtube: '#'
-    pinterest: '#'
-    facebook: '#'
-    twitter: '#'
-    google-plus: '#'
+- title: AWS Proficient
+  description: Route 53 etc.
+  icon: pe-7s-help2
 
-# Google Map JS api
-# This is my api for this template
-key-api: AIzaSyA-IkJWq5HjM8dzoyB_j0o4ZlX-_-e7wt8
-map-text: visitorM Ltd.
-map-text-location: Limerick, Ireland
-map-lat: 52.6748827
-map-lng: -8.6497432
-# Enter your Mailchimp User ID and Campaign ID
-# @TODO: Add in a link for where to find these
-mailchimp:
-  user-id: REPLACEME
-  list-id: REPLACEME
+- title: Communicator
+  description: Worked with production managers, business strategists, development peers, and junior developers across countless projects.
+  icon: pe-7s-airplay
 
-####
-#
-# Hi you now use Sera - OnePage Jekyll Template created by Gleesik™
-#
-# Below are each section from the website in order from top to bottom
-# @TODO Edit each sections with your real information and each section from Sera will autocomplete with your information
-#
-####
-
-#####################################
-#############   About   #############
-#####################################
-about-title: CX Hardware & Software 
-about-description: How do you stay in front of technologies that are vital to winning customers’ attention, loyalty and spend? How do you make important advances in customer experiences? <p>visitorM will deliver answers and help you bridge the gap between physical and digital customer experiences.</p> <p>It is a solution made up of connected hardware you place in front of customers and employees. It is easy to extend into your app, beacons and systems with a simplemakes it easy to understand large volumes of data from multiple sources and locations <strong>in real-time</strong>. </p>
-
-##################################### #############  Features  ############
-##################################### 
-features-title: Features for Business Success 
-features-description: visitorM will help you establish a foundation for emotion-recognition that you can measure and incorporate into your experience design and core operations.
-
-
-#
-# Features
-#
-features:
-
-# Feature
-- title: Automate Feedback
-  description: Touch screens placed strategically throughout the customer journey gather real time feedback for your teams to enable improvements in core operations
-  icon: pe-7s-smile
-
-
-# Feature
-- title: Method Statements
-  description: Customer feedback screens can be extended for staff tasks with step-by-step detail on how a task is to be completed for a specific asset or location 
-  icon: pe-7s-magic-wand
-
-# Feature
-- title: Software Integration
-  description: visitorM plays nice with existing systems and can be extended to include digital platforms such as your mobile apps, beacons and business intelligence systems
-  icon: pe-7s-plugin
-
-
-#####################################
-############  Portfolio  ############
-#####################################
-portfolio-title: Projects
-portfolio-description: From Argentina to Qatar, visitorM is a reliable partner to help continuously improve processes that impact your customer experience.
 #
 # Portfolio Grid
 #
-portfolio-categories: [Clients, Hardware, Software]
+portfolio-categories: [Toy Examples]
 portfolio:
 
 # Portfolio Item
-- title: fmm
-  categories: [Clients]
-  image: logo-fmm.jpg
-  url: '#'
-
-# Portfolio Item
-- title: Aeropuertos Argentina 2000
-  categories: [Clients]
-  image: logo-aa2000.jpg
-  url: '#'
-# Portfolio Item
-- title: Brussels Airport Company
-  categories: [Clients]
-  image: logo-bru.jpg
-  url: '#'
-
-# Portfolio Item
-- title: London Heathrow
-  categories: [Clients]
-  image: logo-lhr.jpg
-  url: '#'
-
-# Portfolio Item
-- title: Lounge
-  categories: [Hardware]
-  image: device-lounge.jpg
-  url: '#'
-
-# Portfolio Item
-- title: Floor
-  categories: [Hardware]
-  image: device-floor.jpg
-  url: '#'
-
-# Portfolio Item
-- title: Washroom - Floor
-  categories: [Hardware]
-  image: device-lhr.jpg
-  url: '#'
-
-# Portfolio Item
-- title: Office
-  categories: [Hardware]
-  image: device-office.jpg
-  url: '#'
-
-# Portfolio Item
-- title: Washroom - Wall
-  categories: [Hardware]
-  image: device-washroom.jpg
-  url: '#'
-
-
-# Portfolio Item
-- title: Trends
-  categories: [Software]
-  image: software-charts.jpg
-  url: '#'
-
-# Portfolio Item
-- title: Detail
-  categories: [Software]
-  image: software-assets.jpg
-  url: '#'
-
-
-#####################################
-##########  Core Features  ##########
-####################################
-core-title: Core Features
-core-description: Our solution delivers the tools you need to streamline processes while tracking their impact on customer experiences
-
-#
-# Core Features Left
-#
-core-features-left:
-
-# Feature
-- name: Real-Time Research
-  description: Add new questions to existing questionnaires and collect responses in real-time.
-  icon: pe-7s-chat
-
-# Feature
-- name: Enterprise KPI Goals
-  description: Easy goal setting allows you to set targets and track progress across all the different levels of your business.
-  icon: pe-7s-check
-
-# Feature
-- name: Proactive Service Alerts
-  description: Alerts facilitate action at all levels of your organization—from the CEO to the front line.
-  icon: pe-7s-alarm
-
-# Feature
-- name: Intuitive user interface
-  description: Cloud based interface makes it easy for every user across your organization to understand and act on feedback.
-  icon: pe-7s-cloud
-
-#
-# Core Features Right
-#
-core-features-right:
-
-# Feature
-- name: Real Time Analytics
-  description: Easily and intuitively slice-and-dice all your information in real time.
-  icon: pe-7s-network
-
-# Feature
-- name: Centralized CX Reports
-  description: Works across every customer touchpoint to present a unified view of your customers’ experiences.
-  icon: pe-7s-graph
-
-# Feature
-- name: Role-based Access
-  description:  Reports and actions are tailored to each individual and their role in your business.
-  icon: pe-7s-lock
-
-# Feature
-- name: Big Data Performance
-  description: In-memory analytics enables you to view and understand multidimensional data at scale — instantly
-  icon: pe-7s-science
-
+- title: Toy Robot
+  categories: [Toy Examples]
+  image: toy_robot.png
+  url: ''
 
 #####################################
 ########### Testimonials ############
 #####################################
 testimonials-title: Testimonials
-testimonials-description: 
+testimonials-description:
 
 #
 # Testimonials
@@ -289,20 +44,37 @@ testimonials-description:
 testimonials:
 
 # Client
-- name: Auditor Internal Quality Control
-  url: http://www.brusselsairport.be
-  url-text: visit Brussels Airport
-  avatar: avatar-bru.jpg
-  cite: They were always able to meet our business requirements regarding customer feedback. They keep their applications innovative in all aspects and are working every day to further improve them.
-  logo-img: logo-bru.jpg
+- name: Johnatan Doe
+  url: http://themeforest.net
+  url-text: ThemeForest.net
+  avatar: avatar-01.jpg
+  cite: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius adipiscing lectus, eu ornare lectus semper in. Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed.
+  logo-img: themeforest.png
 
 # Client
-- name: Head of Department
-  url: http://fmm.com.qa/
-  url-text: visit FMM Qatar
-  avatar: avatar-hia.jpg
-  cite: Alex (visitorM CEO), is an industry leader in airport solutions that deliver continuous passenger feedback and innovative tools that help me drive frontline staff performance.
-  logo-img: logo-fmm.jpg
+- name: Adam Smith
+  url: http://codecanyon.net
+  url-text: CodeCanyon.net
+  avatar: avatar-02.jpg
+  cite: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius adipiscing lectus, eu ornare lectus semper in. Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed.
+  logo-img: codecanyon.png
+
+# Client
+- name: Irene Warner
+  url: http://videohive.net
+  url-text: VideoHive.net
+  avatar: avatar-03.jpg
+  cite: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius adipiscing lectus, eu ornare lectus semper in. Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed.
+  logo-img: videohive.png
+
+# Client
+- name: Richard Ryan
+  url: http://audiojungle.net
+  url-text: AudioJungle.net
+  avatar: avatar-04.jpg
+  cite: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius adipiscing lectus, eu ornare lectus semper in. Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed.
+  logo-img: audiojungle.png
+
 
 #####################################
 ############# Our Blog ##############
@@ -315,50 +87,64 @@ blog-description: Interdum et malesuada fames ac ante ipsum primis in faucibus. 
 ############### Team ################
 #####################################
 team-title: Meet Our Team
-team-description: The team has broad international experience working for companies such as Telefonica O2, SupportSoft and Hewlett Packard helping them manage projects, develop web applications and sell complex IT solutions. 
+team-description: Nulla a tellus at turpis gravida congue non interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed, suscipit et nisi. Nulla a tellus at turpis gravida congue non sed nisl. Pellentesque scelerisque eu neque et tincidunt.
+
 #
 # Team Members
 #
 team:
 
 # Team Member
-- name: Alex Schregardus
-  tagline: CEO
-  avatar: team-as.jpg
+- name: Jack Skilton
+  tagline: Graphic Designer
+  avatar: avatar-01.jpg
 
   # Social Links
-  #youtube: ''
-  #pinterest: ''
-  #facebook: ''
-  #twitter: ''
-  #google-plus: ''
-  #vimeo: ''
+  youtube: '#'
+  pinterest: '#'
+  facebook: '#'
+  twitter: '#'
+  google-plus: '#'
+  vimeo: '#'
 
 # Team Member
-- name: Nico de Moor
-  tagline: CTO
-  avatar: team-ndm.jpg
+- name: James Young
+  tagline: Developer
+  avatar: avatar-02.jpg
 
   # Social Links
-  #youtube: '#'
-  #pinterest: '#'
-  #facebook: '#'
-  #twitter: '#'
-  #google-plus: '#'
-  #vimeo: '#'
+  youtube: '#'
+  pinterest: '#'
+  facebook: '#'
+  twitter: '#'
+  google-plus: '#'
+  vimeo: '#'
 
 # Team Member
-- name: Ted Brooks
-  tagline: CFO
-  avatar: team-tb.jpg
+- name: Johnatan Doe
+  tagline: Hacker
+  avatar: avatar-04.jpg
 
   # Social Links
-  #youtube: '#'
-  #pinterest: '#'
-  #facebook: '#'
-  #twitter: '#'
-  #google-plus: '#'
-  #vimeo: '#'
+  youtube: '#'
+  pinterest: '#'
+  facebook: '#'
+  twitter: '#'
+  google-plus: '#'
+  vimeo: '#'
+
+# Team Member
+- name: Ecaterina Doe
+  tagline: Support Expert
+  avatar: avatar-03.jpg
+
+  # Social Links
+  youtube: '#'
+  pinterest: '#'
+  facebook: '#'
+  twitter: '#'
+  google-plus: '#'
+  vimeo: '#'
 
 
 #####################################
@@ -402,12 +188,13 @@ plan-ultimate-url: '#'
 ############   Contact   ############
 #####################################
 contact-title: Contact Us
-contact-description: Please enter your details and we will get back to you to learn about your requirements as soon as possible.
+contact-description: Nulla a tellus at turpis gravida congue non interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat.
+
 
 #####################################
 #############   Footer   ############
 #####################################
-footer-description: visitorM is focused on delivering robust, secure and cutting edge customer experience solutions that drive real value for our customers worldwide. From Argentina to Qatar, visitorM is a reliable partner to help continuously improve processes that impact your customer experience.
-footer-copyright-text: visitorM Ltd.&trade;
-footer-copyright-url: http://www.visitorM.com/
-footer-copyright-year: 2013-2017
+footer-description: Nulla a tellus at turpis gravida congue non interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat.
+footer-copyright-text: Gleesik&trade;
+footer-copyright-url: http://gleesik.ro/
+footer-copyright-year: 2016
