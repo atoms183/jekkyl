@@ -1,100 +1,62 @@
 ---
-layout: default
-title: Home
+layout: landing
 ---
-<div class="col-xs-12 home-wrap">
-  <h2>Recent Articles</h2>
-  <div class="col-md-9" id="recent-articles-container">
-  {% for post in site.posts limit:6 %}
-    <div class="clearfix col-xs-6 col-sm-4 article-cards recent-articles">
-      <a href="{{ post.url }}"><img src='{{ post.thumbnail }}' class="thumbnails"></a>
-      <a class='post-link' href="{{ post.url }}">{{ post.title }}</a>
-      <br>
-      <span class="meta">{{ post.categories }} </span>
-    </div>
-  {% endfor %}
-  </div>
-  <div class="col-md-3">
-    {% for post in site.posts limit:4 offset: 6%}
-      <hr>
-      <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
-      <br>
-      <a class="meta" href='{{ site.url }}/categories/{{ post.categories }}.html'>{{ post.categories }} </a>
-    {% endfor %}
-  </div>
-  <hr class="col-xs-12">
+  <h1 class="l-title">Front end designer</h1>
 
-  <!-- Begin Multi-column sections -->
-  <div class="col-xs-12 col-sm-6 half-section half-section-left clearfix">
-    <div class="col-xs-12 category-bar">
-      <h3>Advice</h3>
-    </div>
-    <!-- Liquid loop that populates posts in a given category -->
-    {% for post in site.categories.advice limit:2 %}
-      <div class="col-xs-12 col-sm-6 article-cards">
-        <a href="{{ post.url }}"><img src='{{ post.thumbnail }}' class="thumbnails"></a>
-        <a class='post-link' href="{{ post.url }}">{{ post.title }}</a>
-        <br>
-        <span class="meta date">{{ post.date | date_to_string }}</span>
-      </div>
-    {% endfor %}
-    <!-- These next two columns will only show the title and date for each post. The value is currently set to list 2 stories in each column. -->
-    <div class="col-xs-12 col-sm-6 article-cards clearfix">
-      <hr>
-    <!-- If you want to add more posts to each column change the 'limit' value, and adjust the 'offset' value accordingly -->
-    {% for post in site.categories.advice limit:2 offset:2 %}
-        <a class='post-link' href="{{ post.url }}">{{ post.title }}</a>
-        <br>
-        <span class="meta date">{{ post.date | date_to_string }}</span>
-        <br>
-    {% endfor %}
-    </div>
-    <!-- Second text-only column, this one has no <hr> on top of it, for silly styling purposes. The offset value makes sure that we're not repeating posts listed in each category -->
-    <div class="col-xs-12 col-sm-6 article-cards push-down">
-    {% for post in site.categories.advice limit:2 offset:4 %}
-        <a class='post-link' href="{{ post.url }}">{{ post.title }}</a>
-        <br>
-        <span class="meta date">{{ post.date | date_to_string }}</span>
-        <br>
-    {% endfor %}
-    </div>
-  </div>
 
-  <!-- Same concept as above, just for a different category -->
-  <div class="col-xs-12 col-sm-6 half-section half-section-left">
+<div class="my-img"></div>
 
-    <div class="col-xs-12 category-bar">
-      <h3>Recipes</h3>
-    </div>
-    {% for post in site.categories.recipes limit:2 %}
-      <div class="col-xs-12 col-sm-6 article-cards">
-        <a href="{{ post.url }}"><img src='{{ post.thumbnail }}' class="thumbnails"></a>
-        <a class='post-link' href="{{ post.url }}">{{ post.title }}</a>
-        <br>
-        <span class="meta date">{{ post.date | date_to_string }}</span>
-      </div>
+<nav role="navigation">
+  <ul>
+    {% for page in site.pages %}
+      {% assign current = page.title | downcase %}
+      {% if page.title %}
+      <li class="nav__item">
+        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      </li>
+      {% endif %}
     {% endfor %}
+  </ul>
+</nav>
 
-    <!-- Text-only column left -->
-    <div class="col-xs-12 col-sm-6 article-cards clearfix">
-      <hr>
-    {% for post in site.categories.recipes limit:2 offset:2 %}
-        <a class='post-link' href="{{ post.url }}">{{ post.title }}</a>
-        <br>
-        <span class="meta date">{{ post.date | date_to_string }}</span>
-        <br>
-    {% endfor %}
-    </div>
+<div class="l-social-wrap">
+    <ul class="social-icons text-center">
+      <li>
+        <a href="https://twitter.com/iamrenopeno" title="Twitter">
+          <i class="fa fa-twitter twitter" aria-hidden="true"></i>
+        </a>
+      </li>
 
-      <!-- Text-only column right -->
-    <div class="col-xs-12 col-sm-6 article-cards push-down">
-    {% for post in site.categories.recipes limit:2 offset:4 %}
-        <a class='post-link' href="{{ post.url }}">{{ post.title }}</a>
-        <br>
-        <span class="meta date">{{ post.date | date_to_string }}</span>
-        <br>
-    {% endfor %}
-    </div>
-  </div>
+      <li>
+        <a href="https://www.instagram.com/renopeno/" title="Instagram">
+          <i class="fa fa-instagram instagram" aria-hidden="true"></i>
+        </a>
+      </li>
 
+      <li>
+        <a href="https://github.com/renopeno" title="GitHub"><i class="fa fa-github github" aria-hidden="true"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.linkedin.com/in/renopeno" title="LinkedIn">
+          <i class="fa fa-linkedin linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
 </div>
+
+
+<!-- Scripts -->
+
+  <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-82392274-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>

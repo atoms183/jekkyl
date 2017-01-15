@@ -1,20 +1,34 @@
-# Default, Defaults
-markdown: redcarpet
-highlighter: pygments # or rouge or null
-exclude: ["node_modules", "gulpfile.js", "package.json"]
+# Site settings
+title: Renato Mandić - Personal website
+email: renato.mandic@gmail.com
+description: I'm Renato. I am Front End Developer and Designer based in Croatia. I'm always availible for freelance work. Contact me!
+url: "https://renatomandic.com" # the base hostname & protocol for your site
+enforce_ssl: www.renatomandic.com   # without any protocol
+twitter_username: iamrenopeno
 
-# Jekyll Defaults
-title: Little Big Blue
-email: your-email@domain.com
-description: A small and simple site I made to test out Jekyll. Watch out! I'm going to make a material design theme next!
-baseurl: "" # the subpath of your site, e.g. /blog
 
-# Where can people find your site?
-url: "http://localhost:3000"
-# When developing, set this ^ equal to whatever localhost you're using
+# Build settings
+markdown: kramdown
+permalink: pretty
 
-# Socail Media links
-# Use these to link users to your organization's social media sites
-twitter:
-facebook:
-google:
+# Default settings
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      author: Renato
+      layout: "post"
+      comments: true
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "page"
+
+# Gems
+gems: [jekyll-paginate]
+paginate: 3
+paginate_path: "/blog/page/:num"

@@ -1,0 +1,133 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: 'Noto Serif', serif;
+	background: #F8F8F8;
+	color: $text-color;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.4;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+.bg-fff {
+	background-color: #fff;
+}
+.left-bar,
+.right-bar,
+.bottom-bar {
+  z-index: 14;
+}
+.left-bar {
+  position: fixed;
+  top:0;
+  left:0;
+  height: 100vh;
+  width: 7px;
+  background-color: $red;
+}
+.right-bar {
+  position: fixed;
+  top:0;
+  right:0;
+  height: 100vh;
+  width: 7px;
+  background-color: $blue;
+}
+.bottom-bar {
+  position: fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  height: 7px;
+  width: 100vw;
+  background: linear-gradient(90deg,$red,$blue);
+}
+.title {
+	display: block;
+	text-align: center;
+	border-bottom: none !important;
+	margin-top: $margin-s;
+	@include textGradient($blue-dark, $blue-light, $blue-dark);
+	&:hover {
+		border-bottom: none;
+	}
+}
+
+h1 {
+	display: block;
+	border-bottom: none !important;
+
+	// typography
+	font-family: $sans;
+  font-size: $textSize-xxxl;
+  font-weight: 600;
+}
+h2 {
+  margin-top: 2em;
+  margin-bottom: .5em;
+
+  // typography
+  font-family: $sans;
+	font-size: $textSize-xxl;
+  font-weight: 600;
+}
+h3 {
+  margin-top: 2em;
+  margin-bottom: .5em;
+
+  // typography
+  font-family: $sans;
+	font-size: $textSize-xl;
+  font-weight: 600;
+}
+h4 {
+  margin-top: 2em;
+	margin-bottom: .5em;
+
+	// typography
+	color: $black;
+	font-family: $sans;
+	font-size: $textSize-l;
+  font-weight: 600;
+}
+
+a {
+	padding-bottom: 0.085em;
+}
+.container {
+	padding-left: 0.70em;
+	padding-right: 0.70em;
+	max-width: 1024px;
+}
+
+code {
+  font-family: monospace;
+  color: #555;
+  background-color: rgba(0,0,0,0.04);
+  padding: 1px 3px;
+}
+
+@media all and (max-width:760px) {
+  .left-bar,
+  .right-bar,
+  .bottom-bar {
+    display: none;
+  }
+
+  h1 {
+  	font-size: $textSize-xl;
+  }
+  h2 {
+    font-size: $textSize-l;
+  }
+}
