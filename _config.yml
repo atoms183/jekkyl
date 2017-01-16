@@ -1,11 +1,49 @@
-permalink: /:categories/:title/
-url: "http://example.com"
-full_name: "Saigon Jekyll Theme"
-first_name: "Just"
-last_name: "Me"
-blog_title: "Title"
-author_img_name_path: "/images/users/user.jpg"
-disqus_shortname: "example"
-copyright_year: "2016"
-google_analytics_code: ""
-aboutme: "I like ramen noodles with cream."
+# Welcome to Jekyll!
+
+# Website settings
+title: "atoms183"
+description: "Jekyll and github pages."
+keywords: "/"
+baseurl: "/"
+url: "/"
+# url: "http://127.0.0.1:4000"
+
+# author
+author:
+  name: 'atoms'
+  first_name: '#'
+  last_name: '#'
+  cv: ''
+  email: ''
+  facebook_username: ''
+  github_username: ''
+  avatar: 'static/img/landing/Jack.jpg'
+  desc: 'I am a Full Stack engineer with website development, automation Ops and writing scripts experience. Life is a continuous learning process, so work makes me more rigorous, travel makes my life more colorful. I can make lots of friends when I coding and travel.'
+
+
+disqus:
+  name: 
+  public_key: 
+
+# share
+bshare:
+  uuid: 513f778e-a8f7-4c20-9ec2-d29cc2328d75
+
+# baidu analytics
+ba:
+  # uuid: 317acca9ef9255b934e46371e471431d
+
+
+# growingIO
+gio:
+  id: a49d4901c7853da9
+
+# Build settings
+encoding: "utf-8"
+
+# other settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
