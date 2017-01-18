@@ -8,7 +8,7 @@ header-img: "img/posts/screw-laptop-bg.jpg"
 comments: true
 tags: [ CodeMonkey, Robotics ]
 ---
-<pre>
+<code>
 Данный код производит условие 
 <!--условие хит распродажа-->
    <div class="tovar_img" >
@@ -25,4 +25,4 @@ tags: [ CodeMonkey, Robotics ]
 <!--Ограничение по символам в анонсе-->
 <?echo TruncateText($arItem["PREVIEW_TEXT"], 130); ?>
 	
-</pre>
+</code>
