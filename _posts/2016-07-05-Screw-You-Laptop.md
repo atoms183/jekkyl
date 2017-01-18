@@ -9,15 +9,20 @@ comments: true
 tags: [ CodeMonkey, Robotics ]
 ---
 <pre>
-	 <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/clean-blog.css" | prepend: site.baseurl }}">
-
-    <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}">
-
-    <!-- Custom Fonts -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+Данный код производит условие 
+<!--условие хит распродажа-->
+   <div class="tovar_img" >
+     <img src="<?=$arResult["PREVIEW_PICTURE"]["UNSAFE_SRC"]?>" />
+<?if ($arResult['PROPERTIES']['HIT']['VALUE'] == 'Y' ):?>
+	<span class="tovars_marker reds" >hit</span>
+<?elseif ($arResult['PROPERTIES']['SALE']['VALUE'] == 'Y'):?>
+<span class="tovars_marker yellow" >sale</span>
+<?endif;?>
+	</div>						
+								
+<!--Подсчет элементов-->								
+<h2 class="block_content_head" >Сравнение товаров<span>показано  <?=count($arResult["ITEMS"])?> из <?=count($arResult["ITEMS"])?> товаров</span></h2>
+<!--Ограничение по символам в анонсе-->
+<?echo TruncateText($arItem["PREVIEW_TEXT"], 130); ?>
 	
 </pre>
