@@ -13,7 +13,7 @@ tags: [ CodeMonkey ]
 Presenting HTML data in an Android application is problematic. For instance, if you have a big junk of HTML, you may use a Web View; however it would become awfully slow for multiple independent pieces. As an alternative you can use a TextView. Unfortunately TextView doesn't support all the HTML tags, even some common ones. Luckily, there is a nice library called `HtmlTextView` which adds support for most of the common tags. Although loading images in TextView is a pain, the load time is large and it is always loaded in the memory. Thus if your images are large, you will soon get an OutOfMemory Error (OOM). For android this limit is around 20MB of Ram. Popular image loading and caching libraries mostly set an image directly to the ImageView. However, there is a workaround for using Universal Image Loader Library (UIL) for loading and caching images. It turns out you can give your custom implementation of ImageGetter (an interface) to load images.
 
 Following is an implementation of ImageGetter which fetches images using UIL:
-{% gist /atoms183/e41ca69912a7e0fbb52a HuracanImageGetter.java %}
+<script src="https://gist.github.com/atoms183/e41ca69912a7e0fbb52a.js"></script>
 
 
 Now setting HTML to HtmlTextView (which is a descendant of TextView) with the new ImageGetter:
