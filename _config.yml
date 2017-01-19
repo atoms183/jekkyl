@@ -31,6 +31,11 @@ portfolio:
   categories: [Toy Examples]
   image: img-01.jpg
   url: '#'
+# Portfolio Item
+- title: Toy Robot
+  categories: [Toy Examples]
+  image: img-02.jpg
+  url: '#'  
 
 #####################################
 ########### Testimonials ############
