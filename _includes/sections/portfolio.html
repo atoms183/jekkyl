@@ -37,7 +37,7 @@
 
       <div class="col-md-4 col-sm-6 item visible {% for category in item.categories %} {{ category | replace:' ','-' | downcase }}{% endfor %}">
         <figure class="img-wrap">
-         <!-- <img src="{{ site.baseurl }}/images/portfolio/{{ item.image }}" alt="Portfolio Item Image" />-->
+         <img src="{{ site.baseurl }}/images/portfolio/{{ item.image }}" alt="Portfolio Item Image" />
         </figure>
         <div class="item-content">
           <h3>{{ item.title }}</h3>
