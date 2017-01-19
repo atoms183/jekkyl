@@ -23,14 +23,62 @@ skills:
 #
 # Portfolio Grid
 #
-portfolio-categories: [Toy Examples]
+portfolio-categories: [Websites,Logo,Graphic Design,Development,Video,Photography]
+
 portfolio:
 
 # Portfolio Item
-- title: Toy Robot
-  categories: [Toy Examples]
-  image: toy_robot.png
-  url: 'https://github.com/bentheax/toy_robot'
+- title: Images one
+  categories: [Websites]
+  image: image: img-01.jpg
+  url: '#'
+# Portfolio Item
+- title: Images two
+  categories: [Websites]
+  image: image: img-02.jpg
+  url: '#'
+  
+ # Portfolio Item
+- title: Images three
+  categories: [Websites]
+  image: image: img-03.jpg
+  url: '#'
+ # Portfolio Item
+- title: Images four
+  categories: [Logo]
+  image: image: img-04.jpg
+  url: '#'
+  
+  # Portfolio Item
+- title: Images five
+  categories: [Graphic Design]
+  image: image: img-05.jpg
+  url: '#'
+  
+  # Portfolio Item
+- title: Images six
+  categories: [Graphic Design]
+  image: image: img-06.jpg
+  url: '#'
+  
+  # Portfolio Item
+- title: Images seven
+  categories: [Development]
+  image: image: img-07.jpg
+  url: '#'
+  
+  # Portfolio Item
+- title: Images eight
+  categories: [Video]
+  image: image: img-08.jpg
+  url: '#'
+  
+  # Portfolio Item
+- title: Images nine
+  categories: [Photography]
+  image: image: img-09.jpg
+  url: '#'
+  
 
 #####################################
 ########### Testimonials ############
