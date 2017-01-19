@@ -1,57 +1,62 @@
 ---
-layout: default
+layout: page
 ---
 
-<!-- Post Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>{{ page.title }}</h1>
-                    {% if page.subtitle %}
-                    <h2 class="subheading">{{ page.subtitle }}</h2>
-                    {% endif %}
-                    <span class="meta" style='margin-top:0.5em;'>Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}
-                    </span>
-                    <span class="meta" style='margin-top:0.5em;'> Tags: {% for tag in page.tags %}<a href="/blog/tags/{{ tag }}"><i class="fa fa-tag"></i> {{ tag }}</a> {% endfor %} </span>
-                    <span class="meta" style='margin-top:0.5em;'>
-                        {% assign minutes = content | number_of_words | divided_by: site.wpm %}
-                        <i class="fa fa-clock-o"></i>&nbsp;{% if minutes == 0 %}{% assign minutes = 1 %}{% endif %}
-                        {{ minutes }} minute read
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+<!-- Blog Article -->
+<div class="post-full">
+  <article class="blog-article blog-single-page clearfix">
 
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                {{ content }}
-                <br>
-                {% if page.comments %}
-                    {% include disqus_comments.html %}
-                {% endif %}
-                <br>
-                <ul class="pager">
-                    {% if page.previous.url %}
-                    <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-                    </li>
-                    {% endif %}
-                    {% if page.next.url %}
-                    <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-                    </li>
-                    {% endif %}
-                </ul>
+    <!-- Article Header -->
+    <header class="article-header">
+      <div class="img-wrap">
+        <img src="{{ site.baseurl }}/images/blog/{{ page.image }}" alt="Article Blog Image">
+      </div>
+      <div class="article-title">
+        <h3 class="title">{{ page.title }}</h3>
+        <h4 class="category">{{ page.categories | first }}</h4>
+      </div>
+    </header>
 
-            </div>
-        </div>
+    <!-- Article Content -->
+    <div class="article-content">
+      {{ page.content }}
     </div>
-</article>
-<hr>
+
+    <!-- Article Tool Boxes -->
+    <div class="article-boxes">
+
+      <!-- Tags Box -->
+      <div class="tags-article box">
+        <span class="title">Tags:</span>
+        <ul class="tag-cloud-box box-content">
+          {% assign tags_list = page.tags %}
+            {% if tags_list.first[0] == null %}
+              {% for tag in tags_list %}
+                <li><a href="#{{ tag }}">{{ tag }}</a></li>
+              {% endfor %}
+            {% else %}
+              {% for tag in tags_list %}
+                <li><a href="#{{ tag[0] }}">{{ tag[0] }}</a></li>
+              {% endfor %}
+            {% endif %}
+          {% assign tags_list = nil %}
+        </ul>
+      </div>
+
+      <!-- Share Article Links Box -->
+      <div class="share-article box clearfix">
+        <span class="title">Share:</span>
+        <div class="social-icons box-content">
+          <ul class="icons global-text-color-icons">
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank"><i class="fi flaticon-facebook"></i></a></li>
+            <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank"><i class="fi flaticon-twitter"></i></a></li>
+            <li><a href="https://plus.google.com/share?url=" target="_blank"><i class="fi flaticon-google-plus"></i></a></li>
+            <li><a href="http://pinterest.com/pin/create/button/?url=&description=" target="_blank"><i class="fi flaticon-pinterest"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </article>
+</div>
