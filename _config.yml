@@ -46,8 +46,37 @@ portfolio:
 - title: Images four
   categories: [Logo]
   image: img-04.jpg
-  url: '#' 
-
+  url: '#'
+  
+  # Portfolio Item
+- title: Images five
+  categories: [Graphic Design]
+  image: img-05.jpg
+  url: '#'
+  
+  # Portfolio Item
+- title: Images six
+  categories: [Graphic Design]
+  image: img-06.jpg
+  url: '#'
+  
+  # Portfolio Item
+- title: Images seven
+  categories: [Development]
+  image: img-07.jpg
+  url: '#'
+  
+  # Portfolio Item
+- title: Images eight
+  categories: [Video]
+  image: img-08.jpg
+  url: '#'
+  
+  # Portfolio Item
+- title: Images nine
+  categories: [Photography]
+  image: img-09.jpg
+  url: '#'
 #####################################
 ########### Testimonials ############
 #####################################
