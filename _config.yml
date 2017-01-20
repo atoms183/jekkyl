@@ -4,8 +4,8 @@ exclude: ["node_modules", "gulpfile.js", "package.json", "README.md"]
 ####################################
 ######  Global Social Links   ######
 ####################################
-youtube: 'https://www.youtube.com/user/Baxaxx'
-twitter: 'https://twitter.com/BenBaxnick'
+youtube: '#'
+twitter: '#'
 
 skills:
 - title: Ruby Developer
