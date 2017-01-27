@@ -31,4 +31,3 @@ Nullam varius est ac condimentum accumsan. Nunc vel nulla neque. Nullam et sem q
 
 
 
-<script src="https://gist.github.com/atoms183/41a1b69fc0dc08aae3d7c1058f9b8a6c.js"></script>
