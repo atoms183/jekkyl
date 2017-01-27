@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Событие “onAfterMessageAdd(Добавление нового сообщения на форум)"
+title: onAfterMessageAdd
 tagline: CEvent::Send
 date: 2017-05-27 15:37
 categories: [Bitrix]
